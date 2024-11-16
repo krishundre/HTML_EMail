@@ -10,23 +10,69 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link type="css/text" href="../Gotham FS/style.css">
     <style>
         body {
-            background: url(https://github.com/krishundre/HTML_EMail/blob/main/Merlot_Wear/20_20_Discomunt_Email/Media/bg.jpg?raw=true);
+            background:
+                url(https://github.com/krishundre/HTML_EMail/blob/main/Merlot_Wear/20_20_Discomunt_Email/Media/bg.jpg?raw=true);
             background-size: cover;
+        }
+
+        .promotion-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .text-section {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .divider {
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #gotham {
+            font-family: Gotham Bold, sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="container p-5">
+    <div class="container p-5 align-items-center justify-content-center">
         <div class="row align-items-center justify-content-center">
             <img src="https://github.com/krishundre/HTML_EMail/blob/main/Merlot_Wear/20_20_Discomunt_Email/Media/Collage.png?raw=true"
                 class="w-50 mx-3">
         </div>
-        <div class="row align-items-center justify-content-center">
-            <img src="https://github.com/krishundre/HTML_EMail/blob/main/Merlot_Wear/20_20_Discomunt_Email/Media/Collage.png?raw=true"
-                class="w-50 mx-3">
+        <div class="row p-5 mx-3 align-items-center justify-content-center">
+            <div class="col" id="messagebox">
+                <div class="promotion-section">
+                    <div class="text-section">
+                        <p id="gotham">20%</p> OFF Site Wide!
+                    </div>
+                    <div class="divider">
+                        <p id="gotham">+</p>
+                    </div>
+                    <div class="text-section">ADDITIONAL 20% OFF on your First Order*</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5 mx-3 align-items-center justify-content-center">
+            <div class="col" id="messagebox">
+                <div class="promotion-section">
+                    <div class="text-section w-50">
+                        Yes, you read that right! It's double the discount for our newest members who know the value of
+                        quality.
+                    </div>
+                    <div class="text-section">Merlot Logo</div>
+                </div>
+            </div>
         </div>
     </div>
 
